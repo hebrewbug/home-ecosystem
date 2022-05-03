@@ -21,24 +21,6 @@ while [ $# -gt 0 ]; do
       if [[ "$1" != *=* ]]; then shift; fi
       UPLOADER_NAME="${1#*=}"
       ;;
-    --help|-h)
-      echo "-------------------------------------------------------------------"
-      echo "Bash script to upload a file to a Synology NAS using a file request"
-      echo "-------------------------------------------------------------------"
-      echo
-      echo "Syntax: bash synology-upload-file-request.sh --host [HOST] --sharing_id [SHARING_ID] --password [PASSWORD] --uploader_name [UPLOADER_NAME] --file [FILE_TO_UPLOAD]"
-      echo
-      echo "Options:"
-      echo "-H,  --host           Host name of the Synology NAS, including the protocol (HTTP/HTTPS) and the port, without trailing slash"
-      echo "-S, --sharing_id      Sharing ID provided by Synology"
-      echo "-P, --password        The password for the file request, if defined"
-      echo "-F, --file            The file to upload"
-      echo "-U, --uploader_name   Uploader name"
-      echo
-      echo "For more details, see https://github.com/Paul-DS/synology-upload-file-request"
-      echo
-      exit 0
-      ;;
     *)
       >&2 printf "Error: Invalid argument\n"
       exit 1

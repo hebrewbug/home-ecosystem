@@ -13,9 +13,9 @@ echo "Backing up $backup_files to $dest/$archive_file"
 date
 
 tar czf $dest/$archive_file $backup_files
-#creates an archive.
-#filter the archive through the gzip utility compressing the archive.
-#output to an archive file. Otherwise the tar output will be sent to STDOUT.
+#c - creates an archive.
+#z - filter the archive through the gzip utility compressing the archive.
+#f - output to an archive file. Otherwise the tar output will be sent to STDOUT.
 
 echo "Backup is finished"
 date

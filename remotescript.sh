@@ -1,7 +1,7 @@
 
 
 #if spoken about several commands:
-ssh -t user1@default_server sudo -- "sh -c 'sync && sync && /sbin/shutdown -h now'"
+ssh -t user1@server_name sudo -- "sh -c 'sync && sync && /sbin/shutdown -h now && etc'"
 #      -t: Force pseudo-terminal allocation
 
 

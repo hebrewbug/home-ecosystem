@@ -13,7 +13,9 @@ sudo firewall-cmd --reload
 #to locate the ports 
 
 ss -ltp
-#or netstat -lptnb for the netstat, to access http://localhost:3000/
+# or 
+# netstat -lptnb 
+# for the netstat, to access http://localhost:3000/
 
 #setup of prometheus(installation)
 sudo zypper in golang-github-prometheus-prometheus
